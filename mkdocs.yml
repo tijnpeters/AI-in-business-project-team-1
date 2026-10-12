@@ -1,0 +1,47 @@
+# Website settings for the AI Handbook. GitHub builds the site from this file
+# plus everything in the docs/ folder. You normally never need to edit it.
+site_name: AI Handbook for Dutch technical SMEs
+site_description: Reviewed, plain-language handbook pages on using AI in technical SMEs (HAN Minor DDDM, AI in Business, team 1)
+# Change this to the real address once GitHub Pages is switched on:
+site_url: https://tijnpeters.github.io/AI-in-business-project-team-1/
+repo_url: https://github.com/tijnpeters/AI-in-business-project-team-1
+repo_name: AI-in-business-project-team-1
+copyright: HAN Minor DDDM — AI in Business, team 1. Student work; not legal advice.
+
+theme:
+  name: material
+  language: en
+  features:
+    - navigation.sections
+    - navigation.indexes
+    - navigation.top
+    - search.highlight
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: teal
+      accent: amber
+      toggle:
+        icon: material/weather-night
+        name: Dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: teal
+      accent: amber
+      toggle:
+        icon: material/weather-sunny
+        name: Light mode
+  icon:
+    logo: material/book-open-page-variant
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.details
+  - pymdownx.superfences
+
