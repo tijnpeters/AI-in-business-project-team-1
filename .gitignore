@@ -427,3 +427,10 @@ FodyWeavers.xsd
 *.msix
 *.msm
 *.msp
+
+
+# --- handbook website ---
+site/
+wiki/
+raw/
+wiki_password.txt
