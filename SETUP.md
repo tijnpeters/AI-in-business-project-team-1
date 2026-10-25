@@ -12,13 +12,13 @@ GitHub Pages. Only pages a researcher has **approved** ever reach the website.
 | `publish_wiki.py` | Copies approved pages from the demo's `wiki/` folder into `docs/handbook/`. Removes draft labels, review notes, links into `raw/` and local file paths. |
 | `.github/workflows/deploy-wiki.yml` | Tells GitHub to rebuild the website whenever `docs/` changes. It refuses to publish any page that is not marked APPROVED. |
 | `requirements.txt` | The two tools GitHub installs to build the site (MkDocs + Material theme). |
-| `gitignore-additions.txt` | Lines to add to the repo's `.gitignore`, so `wiki/`, `raw/` and the wiki password are never uploaded by accident. |
+| `.gitignore` | Already contains `site/`, `wiki/`, `raw/` and `wiki_password.txt`, so drafts, sources and the wiki password are never uploaded by accident. |
 
 ## One-time setup (repo owner - Tijn)
 
 1. Copy everything in this folder into the root of the repo
    `tijnpeters/AI-in-business-project-team-1` (keep the `.github` folder - it may be hidden in File Explorer;
-   turn on View > Show > Hidden items). Add the lines from `gitignore-additions.txt` to `.gitignore`.
+   turn on View > Show > Hidden items).
 2. Commit and push.
 3. On github.com: repo > **Settings** > **Pages** > under "Build and deployment", set **Source** to **GitHub Actions**.
 4. Repo visibility: GitHub Pages is free for **public** repos. For a **private** repo, the owner needs
